@@ -43,3 +43,11 @@ plt.title('Distribution of Sex')
 plt.xlabel('Sex')
 plt.ylabel('Count')
 plt.show()
+
+# 예시: 'race' 열의 분포를 나타내는 플롯 저장
+plt.figure(figsize=(10, 5))
+df['race'].value_counts().plot(kind='bar', color='skyblue')
+plt.title('Distribution of Race')
+plt.xlabel('Race')
+plt.ylabel('Count')
+plt.savefig('race_distribution.png')  # 이미지 파일로 저장
